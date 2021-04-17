@@ -191,33 +191,35 @@ print(np.transpose(c))
 # Exercise 6 - Get the dot product of the array c with c. 
 print(np.dot(c, c))
 # Exercise 7 - Write the code necessary to sum up the result of c times c transposed. Answer should be 261
-
+print(sum(sum(c * np.transpose(c))))
 # Exercise 8 - Write the code necessary to determine the product of c times c transposed. Answer should be 131681894400.
 
 
 ## Setup 4
-d = [
+d = np.array([
     [90, 30, 45, 0, 120, 180],
     [45, -90, -30, 270, 90, 0],
     [60, 45, -45, 90, -45, 180]
-]
+    ])
 
 # Exercise 1 - Find the sine of all the numbers in d
+print(np.sin(d))
 
 # Exercise 2 - Find the cosine of all the numbers in d
-
+print(np.cos(d))
 # Exercise 3 - Find the tangent of all the numbers in d
-
+print(np.tan(d))
 # Exercise 4 - Find all the negative numbers in d
-
+print(d[d < 0])
 # Exercise 5 - Find all the positive numbers in d
-
+print(d[d>0])
 # Exercise 6 - Return an array of only the unique numbers in d.
-
+print(np.unique(d))
 # Exercise 7 - Determine how many unique numbers there are in d.
-
+print(np.count_nonzero(np.unique(d)))
 # Exercise 8 - Print out the shape of d.
-
+print(np.shape(d))
 # Exercise 9 - Transpose and then print out the shape of d.
-
+print(np.shape(np.transpose(d)))
 # Exercise 10 - Reshape d into an array of 9 x 2
+print(np.reshape(d, (9, 2)))
