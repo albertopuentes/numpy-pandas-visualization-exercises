@@ -216,7 +216,7 @@ print(d[d>0])
 # Exercise 6 - Return an array of only the unique numbers in d.
 print(np.unique(d))
 # Exercise 7 - Determine how many unique numbers there are in d.
-print(np.count_nonzero(np.unique(d)))
+print(np.unique(d).shape[0])
 # Exercise 8 - Print out the shape of d.
 print(np.shape(d))
 # Exercise 9 - Transpose and then print out the shape of d.
